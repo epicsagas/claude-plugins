@@ -1,0 +1,22 @@
+{
+  "name": "epicsagas",
+  "owner": {
+    "name": "epicsagas",
+    "url": "https://github.com/epicsagas"
+  },
+  "metadata": {
+    "description": "epicsagas plugin collection — AI coding tools and agent harnesses."
+  },
+  "plugins": [
+    {
+      "name": "epic",
+      "source": "https://github.com/epicsagas/epic-harness",
+      "description": "6 commands, auto-trigger skills, self-evolving agent harness."
+    },
+    {
+      "name": "transpile",
+      "source": "https://github.com/epicsagas/llm-transpile",
+      "description": "Auto-compress .md, .html, .txt files read by Claude Code via PostToolUse hook."
+    }
+  ]
+}
