@@ -5,7 +5,7 @@
     "url": "https://github.com/epicsagas"
   },
   "metadata": {
-    "description": "epicsagas plugin collection — AI coding tools and agent harnesses."
+    "description": "Handcrafted plugins for serious AI-assisted development — autonomous agents, context compression, and tools that get out of your way."
   },
   "plugins": [
     {
