@@ -2,6 +2,9 @@
 
 > Handcrafted plugins for serious AI-assisted development — autonomous agents, context compression, and tools that get out of your way.
 
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=flat&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/epicsaga)
+
 ## 플러그인 목록
 
 | 플러그인 | 설명 | 소스 |
