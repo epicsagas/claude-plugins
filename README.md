@@ -2,7 +2,7 @@
 
 > Handcrafted plugins for serious AI-assisted development — autonomous agents, context compression, and tools that get out of your way.
 
-[![License](https://img.shields.io/github/license/epicsagas/claude-plugins?style=flat)](LICENSE)
+[![License](https://img.shields.io/badge/License-Apache--2.0-blue?style=flat)](LICENSE)
 [![Maintained](https://img.shields.io/badge/Maintained-yes-green?style=flat)](https://github.com/epicsagas/claude-plugins)
 [![Plugins](https://img.shields.io/badge/Plugins-2-blueviolet?style=flat)](https://github.com/epicsagas/claude-plugins)
 [![GitHub Stars](https://img.shields.io/github/stars/epicsagas/claude-plugins?style=flat)](https://github.com/epicsagas/claude-plugins/stargazers)
