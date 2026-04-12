@@ -1,0 +1,97 @@
+# epicsagas plugins
+
+> Plugins artesanais para desenvolvimento sério assistido por IA — agentes autônomos, compressão de contexto e ferramentas que não atrapalham seu fluxo.
+
+[![License](https://img.shields.io/badge/License-Apache--2.0-blue?style=flat)](../LICENSE)
+[![Maintained](https://img.shields.io/badge/Maintained-yes-green?style=flat)](https://github.com/epicsagas/claude-plugins)
+[![Plugins](https://img.shields.io/badge/Plugins-2-blueviolet?style=flat)](https://github.com/epicsagas/claude-plugins)
+[![GitHub Stars](https://img.shields.io/github/stars/epicsagas/claude-plugins?style=flat)](https://github.com/epicsagas/claude-plugins/stargazers)
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=flat&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/epicsaga)
+
+**Traduções:** [English](../README.md) · [한국어](README.ko.md) · [日本語](README.ja.md) · [简体中文](README.zh-cn.md) · [繁體中文](README.zh-tw.md) · [Español](README.es.md) · [Français](README.fr.md) · [Deutsch](README.de.md) · [Русский](README.ru.md) · [العربية](README.ar.md)
+
+---
+
+## Plugins
+
+| Plugin | Descrição | Fonte |
+|--------|-----------|-------|
+| [epic](#epic) | Harness de agente autônomo — 6 comandos poderosos, habilidades auto-evolutivas e hooks invisíveis que protegem, refinam e refletem em cada sessão. | [epicsagas/epic-harness](https://github.com/epicsagas/epic-harness) |
+| [transpile](#transpile) | Leitor de documentos otimizado em tokens — comprime silenciosamente arquivos `.md`, `.html` e `.txt`, reduzindo o uso de contexto em até 40%. | [epicsagas/llm-transpile](https://github.com/epicsagas/llm-transpile) |
+
+---
+
+## Instalação
+
+Adicione este marketplace ao Claude Code:
+
+```bash
+claude plugin add epicsagas
+```
+
+Instale plugins individuais:
+
+```bash
+claude plugin install epicsagas/epic
+claude plugin install epicsagas/transpile
+```
+
+---
+
+## Detalhes dos plugins
+
+### epic
+
+**Harness de Agente Autônomo**
+
+Construa workflows de agentes que lidam com tarefas complexas e de múltiplas etapas de forma independente. Equipado com 6 comandos poderosos integrados, as habilidades evoluem com o uso. Os hooks de sessão executam automaticamente para proteger seu código, refinar a saída e refletir sobre cada sessão.
+
+**Quando usar:**
+- Automatizar ciclos repetitivos de revisão de código, commits e testes
+- Definir workflows personalizados por projeto
+- Aplicar padrões de comportamento consistentes nas sessões do Claude
+
+**Funcionalidades principais:**
+- 6 comandos poderosos integrados (commit, review, test, deploy e mais)
+- Sistema de habilidades auto-evolutivas — aprende com padrões de uso e melhora continuamente
+- Hooks de guarda de sessão — previne erros e mantém qualidade automaticamente
+
+→ [Fonte & Documentação](https://github.com/epicsagas/epic-harness)
+
+---
+
+### transpile
+
+**Leitor de Documentos Otimizado em Tokens**
+
+Comprime automaticamente arquivos `.md`, `.html` e `.txt` em cada chamada da ferramenta Read, reduzindo o uso de tokens de contexto em até 40%. Efeito imediato sem alterações no fluxo de trabalho.
+
+**Quando usar:**
+- Projetos que referenciam frequentemente documentos grandes ou especificações
+- Quando você atinge regularmente os limites da janela de contexto
+- Para reduzir custos de tokens em sessões longas
+
+**Funcionalidades principais:**
+- Compressão silenciosa — mesma saída, até 40% menos tokens
+- Detecta automaticamente formatos `.md` / `.html` / `.txt`
+- Totalmente compatível com workflows existentes da ferramenta Read
+
+→ [Fonte & Documentação](https://github.com/epicsagas/llm-transpile)
+
+---
+
+## Contribuindo
+
+Para enviar um plugin ou sugerir melhorias:
+
+1. Faça um fork deste repositório
+2. Adicione sua entrada de plugin em `.claude-plugin/marketplace.json`
+3. Abra um Pull Request
+
+Os plugins são mantidos como repositórios GitHub independentes. Este marketplace contém apenas metadados.
+
+---
+
+## Licença
+
+Apache-2.0 © [epicsagas](https://github.com/epicsagas)
