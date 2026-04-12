@@ -23,17 +23,43 @@
 
 ## Instalação
 
-Adicione este marketplace ao Claude Code:
+### Via Claude Code (recomendado)
+
+Adicione o marketplace e instale os plugins:
 
 ```bash
 claude plugin add epicsagas
-```
-
-Instale plugins individuais:
-
-```bash
 claude plugin install epicsagas/epic
 claude plugin install epicsagas/transpile
+```
+
+### epic — instalação independente
+
+**Homebrew** (macOS):
+```bash
+brew install epicsagas/tap/epic-harness
+```
+
+**cargo-binstall** (binário pré-compilado):
+```bash
+cargo binstall epic-harness
+```
+
+**Cargo** (compilar do fonte):
+```bash
+cargo install epic-harness
+```
+
+### transpile — instalação independente
+
+**cargo-binstall** (binário pré-compilado):
+```bash
+cargo binstall llm-transpile
+```
+
+**Cargo** (compilar do fonte):
+```bash
+cargo install llm-transpile
 ```
 
 ---

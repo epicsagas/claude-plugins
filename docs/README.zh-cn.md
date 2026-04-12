@@ -23,17 +23,43 @@
 
 ## 安装
 
-在 Claude Code 中添加此市场：
+### 通过 Claude Code（推荐）
+
+添加市场后安装插件：
 
 ```bash
 claude plugin add epicsagas
-```
-
-安装单个插件：
-
-```bash
 claude plugin install epicsagas/epic
 claude plugin install epicsagas/transpile
+```
+
+### epic — 独立安装
+
+**Homebrew** (macOS):
+```bash
+brew install epicsagas/tap/epic-harness
+```
+
+**cargo-binstall**（预构建二进制）：
+```bash
+cargo binstall epic-harness
+```
+
+**Cargo**（从源码构建）：
+```bash
+cargo install epic-harness
+```
+
+### transpile — 独立安装
+
+**cargo-binstall**（预构建二进制）：
+```bash
+cargo binstall llm-transpile
+```
+
+**Cargo**（从源码构建）：
+```bash
+cargo install llm-transpile
 ```
 
 ---

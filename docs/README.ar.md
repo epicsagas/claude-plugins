@@ -23,17 +23,43 @@
 
 ## التثبيت
 
-أضف هذا السوق إلى Claude Code:
+### عبر Claude Code (مُوصى به)
+
+أضف السوق ثم ثبّت الإضافات:
 
 ```bash
 claude plugin add epicsagas
-```
-
-ثبّت إضافات فردية:
-
-```bash
 claude plugin install epicsagas/epic
 claude plugin install epicsagas/transpile
+```
+
+### epic — تثبيت مستقل
+
+**Homebrew** (macOS):
+```bash
+brew install epicsagas/tap/epic-harness
+```
+
+**cargo-binstall** (ملف ثنائي مُجمَّع مسبقاً):
+```bash
+cargo binstall epic-harness
+```
+
+**Cargo** (البناء من المصدر):
+```bash
+cargo install epic-harness
+```
+
+### transpile — تثبيت مستقل
+
+**cargo-binstall** (ملف ثنائي مُجمَّع مسبقاً):
+```bash
+cargo binstall llm-transpile
+```
+
+**Cargo** (البناء من المصدر):
+```bash
+cargo install llm-transpile
 ```
 
 ---

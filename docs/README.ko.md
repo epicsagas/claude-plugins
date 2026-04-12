@@ -23,17 +23,43 @@
 
 ## 설치
 
-Claude Code에서 이 마켓플레이스를 추가합니다:
+### Claude Code 사용 (권장)
+
+마켓플레이스 추가 후 플러그인을 설치합니다:
 
 ```bash
 claude plugin add epicsagas
-```
-
-개별 플러그인 설치:
-
-```bash
 claude plugin install epicsagas/epic
 claude plugin install epicsagas/transpile
+```
+
+### epic — 독립 설치
+
+**Homebrew** (macOS):
+```bash
+brew install epicsagas/tap/epic-harness
+```
+
+**cargo-binstall** (사전 빌드 바이너리):
+```bash
+cargo binstall epic-harness
+```
+
+**Cargo** (소스 빌드):
+```bash
+cargo install epic-harness
+```
+
+### transpile — 독립 설치
+
+**cargo-binstall** (사전 빌드 바이너리):
+```bash
+cargo binstall llm-transpile
+```
+
+**Cargo** (소스 빌드):
+```bash
+cargo install llm-transpile
 ```
 
 ---

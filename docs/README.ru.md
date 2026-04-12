@@ -23,17 +23,43 @@
 
 ## Установка
 
-Добавьте этот маркетплейс в Claude Code:
+### Через Claude Code (рекомендуется)
+
+Добавьте маркетплейс и установите плагины:
 
 ```bash
 claude plugin add epicsagas
-```
-
-Установите отдельные плагины:
-
-```bash
 claude plugin install epicsagas/epic
 claude plugin install epicsagas/transpile
+```
+
+### epic — автономная установка
+
+**Homebrew** (macOS):
+```bash
+brew install epicsagas/tap/epic-harness
+```
+
+**cargo-binstall** (готовый бинарник):
+```bash
+cargo binstall epic-harness
+```
+
+**Cargo** (сборка из исходников):
+```bash
+cargo install epic-harness
+```
+
+### transpile — автономная установка
+
+**cargo-binstall** (готовый бинарник):
+```bash
+cargo binstall llm-transpile
+```
+
+**Cargo** (сборка из исходников):
+```bash
+cargo install llm-transpile
 ```
 
 ---
