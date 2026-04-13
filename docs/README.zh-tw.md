@@ -4,7 +4,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache--2.0-blue?style=flat)](../LICENSE)
 [![Maintained](https://img.shields.io/badge/Maintained-yes-green?style=flat)](https://github.com/epicsagas/claude-plugins)
-[![Plugins](https://img.shields.io/badge/Plugins-2-blueviolet?style=flat)](https://github.com/epicsagas/claude-plugins)
+[![Plugins](https://img.shields.io/badge/Plugins-3-blueviolet?style=flat)](https://github.com/epicsagas/claude-plugins)
 [![GitHub Stars](https://img.shields.io/github/stars/epicsagas/claude-plugins?style=flat)](https://github.com/epicsagas/claude-plugins/stargazers)
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=flat&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/epicsaga)
 
@@ -18,6 +18,7 @@
 |------|------|--------|
 | [epic](#epic) | 自主代理框架 — 6 個強力指令、自我進化的技能，以及每個工作階段自動執行的隱形鉤子 | [epicsagas/epic-harness](https://github.com/epicsagas/epic-harness) |
 | [transpile](#transpile) | 令牌最佳化文件閱讀器 — 靜默壓縮 `.md`、`.html`、`.txt` 檔案，上下文用量最多減少 40% | [epicsagas/llm-transpile](https://github.com/epicsagas/llm-transpile) |
+| [alcove](#alcove) | MCP文件伺服器 — BM25+向量混合搜尋、lint檢查、專案文件的launchd生命週期管理 | [epicsagas/alcove](https://github.com/epicsagas/alcove) |
 
 ---
 
@@ -31,6 +32,7 @@
 claude plugin add epicsagas
 claude plugin install epicsagas/epic
 claude plugin install epicsagas/transpile
+claude plugin install epicsagas/alcove
 ```
 
 ### epic — 獨立安裝
@@ -60,6 +62,23 @@ cargo binstall llm-transpile
 **Cargo**（從原始碼建置）：
 ```bash
 cargo install llm-transpile
+```
+
+### alcove — 獨立安裝
+
+**Homebrew** (macOS):
+```bash
+brew install epicsagas/tap/alcove
+```
+
+**cargo-binstall**（預建置二進位）：
+```bash
+cargo binstall alcove
+```
+
+**Cargo**（從原始碼建置）：
+```bash
+cargo install alcove
 ```
 
 ---
@@ -103,6 +122,28 @@ cargo install llm-transpile
 - 與現有 Read 工具工作流程完全相容
 
 → [原始碼與文件](https://github.com/epicsagas/llm-transpile)
+
+---
+
+### alcove
+
+**MCP文件伺服器**
+
+透過 MCP 為 AI 編碼代理提供對專案私有文件的隨選存取。BM25+向量混合搜尋、語義 lint 檢查、文件驗證，以及支援代理模式的背景 HTTP 伺服器實現即時回應。
+
+**適用場景：**
+- 跨多個 AI 代理管理私有專案文件
+- 從任何 MCP 相容代理搜尋架構決策、PRD 和執行手冊
+- 透過策略驗證和語義 lint 檢查執行文件標準
+
+**核心功能：**
+- 混合搜尋 — BM25 + 向量相似度與 Reciprocal Rank Fusion
+- 一個文件儲存庫，任意代理 — Claude Code、Cursor、Gemini CLI、Codex 等 5 種以上
+- 代理模式背景伺服器 — 消除新工作階段的冷啟動延遲
+- 語義 lint 檢查 — 失效連結、孤立檔案、過時標記、日期聲明檢查
+- macOS launchd 整合 — enable/disable/start/stop/restart 生命週期指令
+
+→ [原始碼與文件](https://github.com/epicsagas/alcove)
 
 ---
 

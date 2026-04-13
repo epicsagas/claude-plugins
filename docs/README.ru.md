@@ -4,7 +4,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache--2.0-blue?style=flat)](../LICENSE)
 [![Maintained](https://img.shields.io/badge/Maintained-yes-green?style=flat)](https://github.com/epicsagas/claude-plugins)
-[![Plugins](https://img.shields.io/badge/Plugins-2-blueviolet?style=flat)](https://github.com/epicsagas/claude-plugins)
+[![Plugins](https://img.shields.io/badge/Plugins-3-blueviolet?style=flat)](https://github.com/epicsagas/claude-plugins)
 [![GitHub Stars](https://img.shields.io/github/stars/epicsagas/claude-plugins?style=flat)](https://github.com/epicsagas/claude-plugins/stargazers)
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=flat&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/epicsaga)
 
@@ -18,6 +18,7 @@
 |--------|----------|----------|
 | [epic](#epic) | Автономный агентский фреймворк — 6 мощных команд, самоэволюционирующие навыки и невидимые хуки, которые защищают, улучшают и анализируют каждую сессию. | [epicsagas/epic-harness](https://github.com/epicsagas/epic-harness) |
 | [transpile](#transpile) | Оптимизированный по токенам считыватель документов — беззвучно сжимает файлы `.md`, `.html` и `.txt`, сокращая использование контекста до 40%. | [epicsagas/llm-transpile](https://github.com/epicsagas/llm-transpile) |
+| [alcove](#alcove) | MCP-сервер документации — гибридный поиск BM25+векторный, линтинг и управление жизненным циклом launchd для проектной документации. | [epicsagas/alcove](https://github.com/epicsagas/alcove) |
 
 ---
 
@@ -31,6 +32,7 @@
 claude plugin add epicsagas
 claude plugin install epicsagas/epic
 claude plugin install epicsagas/transpile
+claude plugin install epicsagas/alcove
 ```
 
 ### epic — автономная установка
@@ -60,6 +62,23 @@ cargo binstall llm-transpile
 **Cargo** (сборка из исходников):
 ```bash
 cargo install llm-transpile
+```
+
+### alcove — автономная установка
+
+**Homebrew** (macOS):
+```bash
+brew install epicsagas/tap/alcove
+```
+
+**cargo-binstall** (готовый бинарник):
+```bash
+cargo binstall alcove
+```
+
+**Cargo** (сборка из исходников):
+```bash
+cargo install alcove
 ```
 
 ---
@@ -103,6 +122,28 @@ cargo install llm-transpile
 - Полная совместимость с существующими рабочими процессами инструмента Read
 
 → [Исходный код и документация](https://github.com/epicsagas/llm-transpile)
+
+---
+
+### alcove
+
+**MCP-сервер Документации**
+
+Предоставляет ИИ-агентам для кодирования доступ к вашим приватным проектным документам по запросу через MCP. Гибридный поиск BM25+векторный, семантический линтинг, валидация документов и фоновый HTTP-сервер с режимом прокси для мгновенного отклика.
+
+**Когда использовать:**
+- Управление приватной проектной документацией через несколько ИИ-агентов
+- Поиск архитектурных решений, PRD и runbook-ов из любого MCP-совместимого агента
+- Применение стандартов документации с валидацией политик и семантическим линтингом
+
+**Ключевые возможности:**
+- Гибридный поиск — BM25 + векторное сходство с Reciprocal Rank Fusion
+- Один doc-репозиторий, любой агент — Claude Code, Cursor, Gemini CLI, Codex и более 5 других
+- Фоновый сервер с режимом прокси — устраняет задержку холодного старта при новых сессиях
+- Семантический линтинг — битые ссылки, осиротевшие файлы, устаревшие маркеры, неактуальные даты
+- Интеграция с macOS launchd — команды жизненного цикла enable/disable/start/stop/restart
+
+→ [Исходный код и документация](https://github.com/epicsagas/alcove)
 
 ---
 

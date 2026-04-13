@@ -4,7 +4,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache--2.0-blue?style=flat)](../LICENSE)
 [![Maintained](https://img.shields.io/badge/Maintained-yes-green?style=flat)](https://github.com/epicsagas/claude-plugins)
-[![Plugins](https://img.shields.io/badge/Plugins-2-blueviolet?style=flat)](https://github.com/epicsagas/claude-plugins)
+[![Plugins](https://img.shields.io/badge/Plugins-3-blueviolet?style=flat)](https://github.com/epicsagas/claude-plugins)
 [![GitHub Stars](https://img.shields.io/github/stars/epicsagas/claude-plugins?style=flat)](https://github.com/epicsagas/claude-plugins/stargazers)
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=flat&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/epicsaga)
 
@@ -18,6 +18,7 @@
 |--------|-----------|-------|
 | [epic](#epic) | Harness de agente autônomo — 6 comandos poderosos, habilidades auto-evolutivas e hooks invisíveis que protegem, refinam e refletem em cada sessão. | [epicsagas/epic-harness](https://github.com/epicsagas/epic-harness) |
 | [transpile](#transpile) | Leitor de documentos otimizado em tokens — comprime silenciosamente arquivos `.md`, `.html` e `.txt`, reduzindo o uso de contexto em até 40%. | [epicsagas/llm-transpile](https://github.com/epicsagas/llm-transpile) |
+| [alcove](#alcove) | Servidor MCP de documentação — busca híbrida BM25+vetorial, lint e gerenciamento de ciclo de vida launchd para documentos de projeto. | [epicsagas/alcove](https://github.com/epicsagas/alcove) |
 
 ---
 
@@ -31,6 +32,7 @@ Adicione o marketplace e instale os plugins:
 claude plugin add epicsagas
 claude plugin install epicsagas/epic
 claude plugin install epicsagas/transpile
+claude plugin install epicsagas/alcove
 ```
 
 ### epic — instalação independente
@@ -60,6 +62,23 @@ cargo binstall llm-transpile
 **Cargo** (compilar do fonte):
 ```bash
 cargo install llm-transpile
+```
+
+### alcove — instalação independente
+
+**Homebrew** (macOS):
+```bash
+brew install epicsagas/tap/alcove
+```
+
+**cargo-binstall** (binário pré-compilado):
+```bash
+cargo binstall alcove
+```
+
+**Cargo** (compilar do fonte):
+```bash
+cargo install alcove
 ```
 
 ---
@@ -103,6 +122,28 @@ Comprime automaticamente arquivos `.md`, `.html` e `.txt` em cada chamada da fer
 - Totalmente compatível com workflows existentes da ferramenta Read
 
 → [Fonte & Documentação](https://github.com/epicsagas/llm-transpile)
+
+---
+
+### alcove
+
+**Servidor MCP de Documentação**
+
+Oferece aos agentes de codificação IA acesso sob demanda aos seus documentos de projeto privados via MCP. Busca híbrida BM25+vetorial, lint semântico, validação de documentos e servidor HTTP em segundo plano com modo proxy para resposta instantânea.
+
+**Quando usar:**
+- Gerenciar documentação de projeto privada em múltiplos agentes IA
+- Buscar decisões de arquitetura, PRDs e runbooks de qualquer agente compatível com MCP
+- Aplicar padrões de documentação com validação de políticas e lint semântico
+
+**Funcionalidades principais:**
+- Busca híbrida — BM25 + similaridade vetorial com Reciprocal Rank Fusion
+- Um doc-repo, qualquer agente — Claude Code, Cursor, Gemini CLI, Codex e mais de 5 outros
+- Servidor em segundo plano com modo proxy — elimina a latência de cold-start em novas sessões
+- Lint semântico — links quebrados, arquivos órfãos, marcadores obsoletos, datas desatualizadas
+- Integração macOS launchd — comandos de ciclo de vida enable/disable/start/stop/restart
+
+→ [Fonte & Documentação](https://github.com/epicsagas/alcove)
 
 ---
 

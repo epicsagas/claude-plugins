@@ -4,7 +4,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache--2.0-blue?style=flat)](../LICENSE)
 [![Maintained](https://img.shields.io/badge/Maintained-yes-green?style=flat)](https://github.com/epicsagas/claude-plugins)
-[![Plugins](https://img.shields.io/badge/Plugins-2-blueviolet?style=flat)](https://github.com/epicsagas/claude-plugins)
+[![Plugins](https://img.shields.io/badge/Plugins-3-blueviolet?style=flat)](https://github.com/epicsagas/claude-plugins)
 [![GitHub Stars](https://img.shields.io/github/stars/epicsagas/claude-plugins?style=flat)](https://github.com/epicsagas/claude-plugins/stargazers)
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=flat&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/epicsaga)
 
@@ -18,6 +18,7 @@
 |---------|-------|--------|
 | [epic](#epic) | إطار عمل وكيل مستقل — 6 أوامر قوية، مهارات تتطور ذاتياً، وخطافات خفية تحمي وتُحسّن وتُراجع كل جلسة. | [epicsagas/epic-harness](https://github.com/epicsagas/epic-harness) |
 | [transpile](#transpile) | قارئ مستندات مُحسَّن للرموز — يضغط ملفات `.md` و`.html` و`.txt` بصمت، مما يقلل استخدام السياق بنسبة تصل إلى 40%. | [epicsagas/llm-transpile](https://github.com/epicsagas/llm-transpile) |
+| [alcove](#alcove) | خادم MCP للتوثيق — بحث هجين BM25+متجهي، فحص الجودة وإدارة دورة حياة launchd لمستندات المشروع. | [epicsagas/alcove](https://github.com/epicsagas/alcove) |
 
 ---
 
@@ -31,6 +32,7 @@
 claude plugin add epicsagas
 claude plugin install epicsagas/epic
 claude plugin install epicsagas/transpile
+claude plugin install epicsagas/alcove
 ```
 
 ### epic — تثبيت مستقل
@@ -60,6 +62,23 @@ cargo binstall llm-transpile
 **Cargo** (البناء من المصدر):
 ```bash
 cargo install llm-transpile
+```
+
+### alcove — تثبيت مستقل
+
+**Homebrew** (macOS):
+```bash
+brew install epicsagas/tap/alcove
+```
+
+**cargo-binstall** (ملف ثنائي مُجمَّع مسبقاً):
+```bash
+cargo binstall alcove
+```
+
+**Cargo** (البناء من المصدر):
+```bash
+cargo install alcove
 ```
 
 ---
@@ -103,6 +122,28 @@ cargo install llm-transpile
 - متوافق تماماً مع سير عمل أداة Read الحالية
 
 → [المصدر والتوثيق](https://github.com/epicsagas/llm-transpile)
+
+---
+
+### alcove
+
+**خادم MCP للتوثيق**
+
+يمنح وكلاء البرمجة بالذكاء الاصطناعي وصولاً فورياً إلى مستندات مشروعك الخاصة عبر MCP. بحث هجين BM25+متجهي، فحص دلالي، التحقق من المستندات وخادم HTTP في الخلفية مع وضع الوكيل للاستجابة الفورية.
+
+**متى تستخدمه:**
+- إدارة توثيق المشاريع الخاصة عبر وكلاء ذكاء اصطناعي متعددين
+- البحث في قرارات الهندسة المعمارية وPRDs وrunbooks من أي وكيل متوافق مع MCP
+- فرض معايير التوثيق مع التحقق من السياسات والفحص الدلالي
+
+**الميزات الرئيسية:**
+- بحث هجين — BM25 + تشابه متجهي مع Reciprocal Rank Fusion
+- مستودع توثيق واحد، أي وكيل — Claude Code، Cursor، Gemini CLI، Codex وأكثر من 5 آخرين
+- خادم في الخلفية مع وضع الوكيل — يزيل تأخر البداية الباردة في الجلسات الجديدة
+- فحص دلالي — روابط معطلة، ملفات يتيمة، علامات قديمة، تواريخ منتهية الصلاحية
+- تكامل macOS launchd — أوامر دورة الحياة enable/disable/start/stop/restart
+
+→ [المصدر والتوثيق](https://github.com/epicsagas/alcove)
 
 ---
 

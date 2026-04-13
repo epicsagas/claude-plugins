@@ -4,7 +4,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache--2.0-blue?style=flat)](LICENSE)
 [![Maintained](https://img.shields.io/badge/Maintained-yes-green?style=flat)](https://github.com/epicsagas/claude-plugins)
-[![Plugins](https://img.shields.io/badge/Plugins-2-blueviolet?style=flat)](https://github.com/epicsagas/claude-plugins)
+[![Plugins](https://img.shields.io/badge/Plugins-3-blueviolet?style=flat)](https://github.com/epicsagas/claude-plugins)
 [![GitHub Stars](https://img.shields.io/github/stars/epicsagas/claude-plugins?style=flat)](https://github.com/epicsagas/claude-plugins/stargazers)
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=flat&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/epicsaga)
 
@@ -18,6 +18,7 @@
 |--------|-------------|--------|
 | [epic](#epic) | Autonomous agent harness — 6 power commands, self-evolving skills, and invisible hooks that guard, polish, and reflect on every session. | [epicsagas/epic-harness](https://github.com/epicsagas/epic-harness) |
 | [transpile](#transpile) | Token-optimized document reader — silently compresses `.md`, `.html`, and `.txt` files on Read, cutting context usage by up to 40%. | [epicsagas/llm-transpile](https://github.com/epicsagas/llm-transpile) |
+| [alcove](#alcove) | MCP documentation server — hybrid BM25+vector search, lint, and launchd lifecycle management for project docs. | [epicsagas/alcove](https://github.com/epicsagas/alcove) |
 
 ---
 
@@ -31,6 +32,7 @@ Add this marketplace, then install plugins:
 claude plugin add epicsagas
 claude plugin install epicsagas/epic
 claude plugin install epicsagas/transpile
+claude plugin install epicsagas/alcove
 ```
 
 ### epic — standalone install
@@ -60,6 +62,23 @@ cargo binstall llm-transpile
 **Cargo** (build from source):
 ```bash
 cargo install llm-transpile
+```
+
+### alcove — standalone install
+
+**Homebrew** (macOS):
+```bash
+brew install epicsagas/tap/alcove
+```
+
+**cargo-binstall** (pre-built binary):
+```bash
+cargo binstall alcove
+```
+
+**Cargo** (build from source):
+```bash
+cargo install alcove
 ```
 
 ---
@@ -103,6 +122,28 @@ Automatically compresses `.md`, `.html`, and `.txt` files on every Read tool cal
 - Fully compatible with existing Read tool workflows
 
 → [Source & Docs](https://github.com/epicsagas/llm-transpile)
+
+---
+
+### alcove
+
+**MCP Documentation Server**
+
+Gives AI coding agents on-demand access to your private project docs via MCP. Hybrid BM25+vector search, semantic lint, document validation, and background HTTP server with proxy mode for instant response.
+
+**When to use:**
+- Managing private project documentation across multiple AI agents
+- Searching architecture decisions, PRDs, and runbooks from any MCP-compatible agent
+- Enforcing documentation standards with policy validation and semantic lint
+
+**Key features:**
+- Hybrid search — BM25 + vector similarity with Reciprocal Rank Fusion
+- One doc-repo, any agent — Claude Code, Cursor, Gemini CLI, Codex, and 5+ more
+- Background server with proxy mode — eliminates cold-start latency on new sessions
+- Semantic lint — broken links, orphan files, stale markers, outdated date claims
+- macOS launchd integration — enable/disable/start/stop/restart lifecycle commands
+
+→ [Source & Docs](https://github.com/epicsagas/alcove)
 
 ---
 
