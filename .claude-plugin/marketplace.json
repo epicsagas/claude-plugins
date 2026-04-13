@@ -24,6 +24,14 @@
         "url": "https://github.com/epicsagas/llm-transpile.git"
       },
       "description": "Token-optimized document reader — silently compresses .md, .html, and .txt files on Read, cutting context usage by up to 40% with zero workflow change."
+    },
+    {
+      "name": "alcove",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/epicsagas/alcove.git"
+      },
+      "description": "MCP documentation server — hybrid BM25+vector search, lint, and launchd lifecycle management for project docs."
     }
   ]
 }
