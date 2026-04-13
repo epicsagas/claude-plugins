@@ -29,7 +29,7 @@
 Add this marketplace, then install plugins:
 
 ```bash
-claude marketplace add epicsagas/claude-plugins
+claude marketplace add epicsagas/plugins
 claude plugin install epic
 claude plugin install transpile
 claude plugin install alcove
