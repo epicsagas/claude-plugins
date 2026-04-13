@@ -29,10 +29,10 @@
 Add this marketplace, then install plugins:
 
 ```bash
-claude plugin add epicsagas
-claude plugin install epicsagas/epic
-claude plugin install epicsagas/transpile
-claude plugin install epicsagas/alcove
+claude marketplace add epicsagas/claude-plugins
+claude plugin install epic
+claude plugin install transpile
+claude plugin install alcove
 ```
 
 ### epic — standalone install
