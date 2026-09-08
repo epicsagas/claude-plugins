@@ -273,7 +273,7 @@
       }
     },
     "episteme": {
-      "sha": "e1ba90a7462fa560b9f3c79714bf19a261f988c6",
+      "sha": "50903ba59cb367f3455ecf917f4749fe0fb6c34a",
       "version": "0.3.12",
       "components": {
         "hooks": [
