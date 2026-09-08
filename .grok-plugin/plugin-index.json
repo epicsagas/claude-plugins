@@ -2,8 +2,8 @@
   "version": 1,
   "plugins": {
     "velith": {
-      "sha": "918bf4fc29d89b5e18a895f522e7407672a23be2",
-      "version": "0.6.0",
+      "sha": "cded951e075e70e6ada791d8f2d5ceeb5b3966ef",
+      "version": "0.7.0",
       "components": {
         "skills": [
           {
@@ -112,8 +112,8 @@
       }
     },
     "epic": {
-      "sha": "561e20644834971bb3a1f5b4579747ee3d5fe355",
-      "version": "0.8.2",
+      "sha": "cb108e5e82378c7710c63822ac4fcc25cba43b30",
+      "version": "0.8.3",
       "components": {
         "skills": [
           {
@@ -245,8 +245,8 @@
       }
     },
     "llm-transpile": {
-      "sha": "587ef5dadeb9e632f349d75fae00c6fec5febc1b",
-      "version": "0.4.1",
+      "sha": "e365c9e931c84e4b56e890ef9bace9c3861c04c9",
+      "version": "0.4.2",
       "components": {
         "hooks": [
           {
@@ -259,8 +259,8 @@
       }
     },
     "alcove": {
-      "sha": "431ab4a8d7066818ab84bc2f69cf62872c8dadc1",
-      "version": "0.12.1",
+      "sha": "8490c2ecbdbb3d4120f26bb8e91335a9a701aeff",
+      "version": "0.12.2",
       "components": {
         "hooks": [
           {
@@ -273,8 +273,8 @@
       }
     },
     "episteme": {
-      "sha": "009611abffd832e2812219f9c7ae041f6bfa8f4e",
-      "version": "0.3.9",
+      "sha": "291a8e35ee0a1dad15d2ecf20b5689cfe6ad3de2",
+      "version": "0.3.12",
       "components": {
         "hooks": [
           {
@@ -284,7 +284,7 @@
       }
     },
     "obsidian-forge": {
-      "sha": "1090c4cd673288cd97760362ff0e13dff86567e3",
+      "sha": "35923c0b67d8bfb9c5c6ea685cdfc2bc92473e10",
       "version": "0.2.4",
       "components": {
         "skills": [
@@ -316,7 +316,7 @@
       }
     },
     "epicsagas": {
-      "sha": "d6da0e37ba057348d6483902ce90b90b7875f3ce",
+      "sha": "ed4751b16563129c530ae1a51e87b6b3adb5939b",
       "version": "0.6.2",
       "components": {
         "skills": [
