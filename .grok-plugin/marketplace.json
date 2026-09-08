@@ -39,7 +39,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/epicsagas/epic-harness.git",
-        "sha": "4c0dcf3076f20c2659ecf1e5805991782785a931"
+        "sha": "66014eaf6e6a325a6c071f9e556252496ac54c20"
       },
       "homepage": "https://github.com/epicsagas/epic-harness",
       "keywords": [
@@ -60,7 +60,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/epicsagas/llm-transpile.git",
-        "sha": "e365c9e931c84e4b56e890ef9bace9c3861c04c9"
+        "sha": "9eb6950f3573332076760691e1b6e4b7074de1ac"
       },
       "homepage": "https://github.com/epicsagas/llm-transpile",
       "keywords": [
@@ -79,7 +79,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/epicsagas/alcove.git",
-        "sha": "246cc945181a6c7793fb39b63ff742523b225c38"
+        "sha": "1846219c71abe47e60599670e682190b4727364d"
       },
       "homepage": "https://github.com/epicsagas/alcove",
       "keywords": [
@@ -102,7 +102,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/epicsagas/Episteme.git",
-        "sha": "50903ba59cb367f3455ecf917f4749fe0fb6c34a"
+        "sha": "f9029e70ad8fa6751b2fc17f43086a59cc8ffaf0"
       },
       "homepage": "https://github.com/epicsagas/Episteme",
       "keywords": [

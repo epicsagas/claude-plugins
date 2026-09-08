@@ -112,7 +112,7 @@
       }
     },
     "epic": {
-      "sha": "4c0dcf3076f20c2659ecf1e5805991782785a931",
+      "sha": "66014eaf6e6a325a6c071f9e556252496ac54c20",
       "version": "0.8.3",
       "components": {
         "skills": [
@@ -245,7 +245,7 @@
       }
     },
     "llm-transpile": {
-      "sha": "e365c9e931c84e4b56e890ef9bace9c3861c04c9",
+      "sha": "9eb6950f3573332076760691e1b6e4b7074de1ac",
       "version": "0.4.2",
       "components": {
         "hooks": [
@@ -259,7 +259,7 @@
       }
     },
     "alcove": {
-      "sha": "246cc945181a6c7793fb39b63ff742523b225c38",
+      "sha": "1846219c71abe47e60599670e682190b4727364d",
       "version": "0.12.2",
       "components": {
         "hooks": [
@@ -273,7 +273,7 @@
       }
     },
     "episteme": {
-      "sha": "50903ba59cb367f3455ecf917f4749fe0fb6c34a",
+      "sha": "f9029e70ad8fa6751b2fc17f43086a59cc8ffaf0",
       "version": "0.3.12",
       "components": {
         "hooks": [
